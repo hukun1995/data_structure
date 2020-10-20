@@ -1,8 +1,8 @@
-package data_structure.stack.model;
+package data_structure.model;
 
 import java.util.LinkedList;
 
-public interface stack<E> {
+public interface Stack<E> {
     // 判断是否为空
     boolean empty();
     // 取size
@@ -13,5 +13,4 @@ public interface stack<E> {
     E pop();
     // 取栈顶
     E top();
-    LinkedList
 }
