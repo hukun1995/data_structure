@@ -66,8 +66,10 @@ public class ArrayStack<E> implements Stack<E>{
         Stack<Integer> stack = new ArrayStack<>();
         stack.push(1);
         stack.push(2);
+        System.out.println("Size: " + stack.size());
         System.out.println(stack.top());
         System.out.println(stack.pop());
+        System.out.println("Size: " + stack.size());
         System.out.println(stack.top());
     }
 }
