@@ -1,4 +1,7 @@
-package data_structure.model;
+package data_structure.stack_queue_hash;
+
+import data_structure.model.LinkedStack;
+import data_structure.model.Stack;
 
 import java.util.ArrayList;
 import java.util.List;
