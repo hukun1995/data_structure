@@ -5,7 +5,6 @@ import data_structure.model.Stack;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.IntStream;
 
 /**
  * 基于栈实现四则运算
@@ -75,7 +74,7 @@ public class Arithmetic {
             // 计算符
             // 碰到右括号")"，将栈中计算符输出, 遇到(，(出栈但不输出
             if(c == ')'){
-                while (!stack.empty()){
+                while (!stack.isEmpty()){
                     char top = stack.pop();
                     if(top != '('){
                         lrnExprList.add(top);
@@ -87,7 +86,7 @@ public class Arithmetic {
             }
 
             // 非右括号
-            while (!stack.empty()){
+            while (!stack.isEmpty()){
                 // 将栈中优先级 >= 当前计算符的输出, 遇到<的直接停止
                 if(getPriority(stack.top()) >= getPriority(c)){
                     lrnExprList.add(stack.pop());
@@ -99,7 +98,7 @@ public class Arithmetic {
             stack.push(c);
         }
         // 将剩余计算符输出
-        while (!stack.empty()){
+        while (!stack.isEmpty()){
             lrnExprList.add(stack.pop());
         }
 

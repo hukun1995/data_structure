@@ -2,6 +2,10 @@ package data_structure.model;
 
 import java.util.LinkedList;
 
+/**
+ * 链式结构栈
+ * @param <E>
+ */
 public class LinkedStack<E> implements Stack<E>{
 
     /**
@@ -19,7 +23,7 @@ public class LinkedStack<E> implements Stack<E>{
     }
 
     @Override
-    public boolean empty(){
+    public boolean isEmpty(){
         return this.top == null;
     }
 

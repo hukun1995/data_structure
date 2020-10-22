@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 基于数组实现的List
+ * 基于数组实现的顺序结构栈
  * 已省略扩容等操作，可参考java-ArrayList实现逻辑
  */
 public class ArrayStack<E> implements Stack<E>{
@@ -36,7 +36,7 @@ public class ArrayStack<E> implements Stack<E>{
     }
 
     @Override
-    public boolean empty() {
+    public boolean isEmpty() {
         return this.size != 0;
     }
 
