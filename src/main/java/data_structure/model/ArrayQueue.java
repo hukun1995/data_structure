@@ -56,7 +56,7 @@ public class ArrayQueue<E> implements Queue<E>{
 
     @Override
     public E front() {
-        return null;
+        return getData(this.head);
     }
 
     @Override

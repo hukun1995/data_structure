@@ -1,6 +1,5 @@
 package data_structure.model;
 
-import java.util.LinkedList;
 
 /**
  * 链式结构栈
@@ -34,7 +33,7 @@ public class LinkedStack<E> implements Stack<E>{
 
     @Override
     public void push(E e) {
-        Node newNode = new Node(e);
+        Node<E> newNode = new Node<>(e);
         newNode.next = this.top;
         this.top = newNode;
         this.size++;
@@ -57,8 +56,8 @@ public class LinkedStack<E> implements Stack<E>{
         E item;
         Node<E> next;
 
-        public Node(E element) {
-            this.item = element;
+        public Node(E e) {
+            this.item = e;
         }
     }
 
