@@ -7,13 +7,12 @@ import java.util.stream.IntStream;
  * BF pattern matching algorithm
  */
 public class BFMatching {
+
     /**
-     * BF算法执行器
-     * 匹配成功, 返回index
-     * 匹配失败, 返回-1
-     * @param s
-     * @param t
-     * @return
+     * BF模式匹配函数
+     * @param s 主串
+     * @param t 子串
+     * @return 匹配成功, 返回index; 匹配失败, 返回-1
      */
     public static int match(String s, String t){
         // 主串第i轮迭代
