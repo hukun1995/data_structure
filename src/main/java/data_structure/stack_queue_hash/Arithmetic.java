@@ -102,10 +102,12 @@ public class Arithmetic {
             lrnExprList.add(stack.pop());
         }
 
-
         return lrnExprList;
     }
 
+    /**
+     * char相减表示ASII编码序号相减
+     */
     private static int char2int(char c){
         return c - '0';
     }
